@@ -42,10 +42,10 @@ def decoder(key, enc):
     return "".join(dec)
 
 
-root = Tk()
+'''root = Tk()
 e = Entry(root, width=20)
 b = Button(root, text="Преобразовать")
-l = Label(root, bg='black', fg='white', width=20)
+l = Label(root, bg='black', fg='white', width=20)'''
 
 
 file_path = 'storage'
