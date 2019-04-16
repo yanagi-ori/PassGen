@@ -10,7 +10,6 @@ class base:
 
 
 def startup():
-    global pw
     start_screen = Tk()
     start_screen.title('PassGen - Вход')
     start_screen.update_idletasks()
