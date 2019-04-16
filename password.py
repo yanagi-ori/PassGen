@@ -24,7 +24,6 @@ def passwordbox(msg="Enter your password.", title=" ", default="",
 
 
 def menu():
-    global choice
     system('cls')
     menu_title = 'Меню'
     menu_msg = 'Выберите'
@@ -35,6 +34,7 @@ def menu():
                '5 - Список изменений',
                '0 - Выход']
     choice = choicebox(menu_msg, menu_title, choices)
+    return choice
 
 
 def encoder(key, clear):
@@ -71,7 +71,7 @@ work = True
 box_button = 'Вернуться'
 name_box = 'Введите название для пароля: '
 while work:
-    menu()
+    choice = menu()
 
     if choice == '0 - Выход':
         exit('Спасибо за использование программы')
