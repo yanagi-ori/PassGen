@@ -42,16 +42,10 @@ def decoder(key, enc):
     return "".join(dec)
 
 
-'''root = Tk()
-e = Entry(root, width=20)
-b = Button(root, text="Преобразовать")
-l = Label(root, bg='black', fg='white', width=20)'''
-
-
 file_path = 'storage'
 try:
     fp = open(file_path)
-except Exception:
+except FileNotFoundError:
     fp = open(file_path, 'w')
 
 msg = "Введите ключ шифрования"
