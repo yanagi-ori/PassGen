@@ -27,7 +27,7 @@ def startup():
     start_screen.geometry('+{}+{}'.format(width, height))
 
     stsc_main_text = Label(text='Для входа в программу введите ключ шифрования')
-    stsc_key = Entry(text='Рекомендуется не оставлять пустым', show='*')
+    # stsc_key = Entry(text='Рекомендуется не оставлять пустым', show='*')
     pw = stsc_key.get()
     stsc_button = Button(text='Вход', command=quit())
 
