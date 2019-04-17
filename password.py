@@ -1,5 +1,3 @@
-# PassGen v.4.0.3
-
 from base64 import b64encode, b64decode
 from easygui import choicebox, msgbox, multpasswordbox, multenterbox
 from easygui.boxes.fillable_box import __fillablebox
@@ -9,16 +7,6 @@ from random import choice as random
 
 def passwordbox(msg="Enter your password.", title=" ", default="",
                 image=None, root=None):
-    """
-    Show a box in which a user can enter a password.
-    The text is masked with asterisks, so the password is not displayed.
-
-    :param str msg: the msg to be displayed.
-    :param str title: the window title
-    :param str default: value returned if user does not change it
-    :return: the text that the user entered, or None if he cancels
-      the operation.
-    """
     return __fillablebox(msg, title, default, mask="*",
                          image=image, root=root)
 
@@ -122,7 +110,8 @@ while work:
 
     elif choice == '5 - Список изменений':
         title = 'Список изменений PassGen'
-        changelog = '4.0 - Графический интерфейс! Внедрен на 30-40% ' \
+        changelog = '4.1 - Чистка кода ' \
+                    '4.0 - Графический интерфейс! Внедрен на 30-40% ' \
                     '3.2 - Многочисленные фиксы - Новые пункты в меню программы ' \
                     '3.1 - Добавлена функция очистки данных (-1 в меню) ' \
                     '3.0 - Введено шифрование - Временный отказ от чтения ' \
