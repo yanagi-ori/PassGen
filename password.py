@@ -1,7 +1,6 @@
 from base64 import b64encode, b64decode
 from easygui import choicebox, msgbox, multpasswordbox, multenterbox
 from easygui.boxes.fillable_box import __fillablebox
-from os import system
 from random import choice as random
 
 
@@ -12,7 +11,6 @@ def passwordbox(msg="Enter your password.", title=" ", default="",
 
 
 def menu():
-    system('cls')
     menu_title = 'Меню'
     menu_msg = 'Выберите'
     choices = ['1 - Сгенерировать случайный пароль',
